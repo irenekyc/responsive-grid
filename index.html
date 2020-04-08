@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 19 - Responsive Grid</title>
+    <script src="https://kit.fontawesome.com/a1e74affc8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="food.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+ 
+     
+            <div class="menu">
+                <div class="menu-card" id="menu-1">
+                    <div class="menu-photo">
+                        <img src="breakfast.jpg" alt="breakfast">
+                    </div>
+                    <div class="menu-description">
+                        <h3 class="menu-description-title"> Breakfast</h3>
+                        <p class="menu-description-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ad,!</p>
+                    </div>
+                
+                </div>
+
+                <div class="menu-card" id="menu-2">
+                    <div class="menu-photo">
+                        <img src="lunch.jpg" alt="lunch">
+                    </div>
+                    <div class="menu-description">
+                        <h3 class="menu-description-title"> Lunch </h3>
+                        <p class="menu-description-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ad,!</p>
+                    </div>
+                
+                </div>
+
+                 <div class="menu-card" id="menu-3">
+                    <div class="menu-photo">
+                        <img src="happyhour.jpg" alt="happyhour">
+
+                    </div>
+                    <div class="menu-description">
+                        <h3 class="menu-description-title"> Happy Hour</h3>
+                        <p class="menu-description-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ad,!</p>
+                    </div>
+            
+                </div>
+
+                <div class="menu-card" id="menu-4">
+                    <div class="menu-photo">
+                        <img src="dinner.jpg" alt="dinner">
+                    </div>
+                    <div class="menu-description">
+                        <h3 class="menu-description-title"> Dinner</h3>
+                        <p class="menu-description-content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ad,!</p>
+                    </div>
+                
+            </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"> </script>
+            <script>
+                
+                
+
+                const tl = new TimelineMax();
+                tl.fromTo("#menu-1", {y:-800, opacity:0}, {y:0, opacity:1, duration: 0.8})
+                .fromTo("#menu-2", {x:800, opacity:0}, {x:0, opacity:1, duration:0.8})
+                .fromTo('#menu-3', {x:-800, opacity:0}, {x:0, opacity:1, duration:0.8})
+                .fromTo('#menu-4', {y:800, opacity:0}, {y:0, opacity:1, duration:0.8})
+            </script>
+
+            <script src="app.js"></script>
+            
+</body>
+
+</html>
